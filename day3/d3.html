@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>DAY 3</h1>
+<p id="hello"></p>
+    <pre>
+        <b>1.What are promises and why do we need them?</b>
+        Promises are used to handle asynchronous operations in JavaScript. They are easy to manage when dealing
+        with multiple asynchronous operations where callbacks can create callback hell leading to unmanageable code.
+        A Promise has four states: 
+        fulfilled: Action related to the promise succeeded
+        rejected: Action related to the promise failed
+        pending: Promise is still pending i.e. not fulfilled or rejected yet
+        settled: Promise has fulfilled or rejected
+       <b>Benefits of Promises
+          ..................... </b> 
+        Improves Code Readability
+        Better handling of asynchronous operations
+        Better flow of control definition in asynchronous logic
+        Better Error Handling
+
+        <b>2.What is the purpose of async/await keywords?</b>
+        An async function is a function declared with the async keyword, and the await keyword is permitted within it.
+         The async and await keywords enable asynchronous, promise-based 
+        behavior to be written in a cleaner style, avoiding the need to explicitly configure promise chains.
+        The body of an async function can be thought of as being split by zero or more await expressions.
+        Top-level code, up to and including the first await expression (if there is one), is run synchronously.
+        In this way, an async function without an await expression will run synchronously. 
+        If there is an await expression inside the function body, 
+        however, the async function will always complete asynchronously.
+
+        <b>3.What is hoisting?</b>
+        JavaScript Hoisting refers to the process whereby the interpreter appears 
+        to move the declaration of functions, variables or classes to the top of their scope, 
+        prior to execution of the code.
+        Hoisting allows functions to be safely used in code before they are declared
+        Variable and class declarations are also hoisted, so they too can be referenced before they are declared. 
+        Note that doing so can lead to unexpected errors, and is not generally recommended.
+
+        <b>4.What is the DOM?</b>
+        The Document Object Model (DOM) is a programming interface for web documents.
+         It represents the page so that programs can change the document structure, style, and content. 
+        The DOM represents the document as nodes and objects; that way,
+         programming languages can interact with the page.
+
+        <b>5.Difference between undefined vs not defined vs NaN</b>
+        <b>undefined: </b>It is a JavaScript keyword that has a special meaning.
+        Everything which gets a space in memory will contain undefined until we assign a value to that memory space.
+
+        <b>not defined:</b> In JavaScript, it is one of the reference errors 
+        that JavaScript will throw when someone accesses the variable which is not inside the memory heap.
+
+        <b>NaN :</b>In JavaScript, NaN is short for "Not-a-Number". In JavaScript, 
+        NaN is a number that is not a legal number. The Global NaN property is the same as the Number. Nan property.
+
+        <b>6.How many operators do we have in JS ?</b>
+        JavaScript includes following categories of operators.
+        Arithmetic Operators : Arithmetic operators are used to perform mathematical operations between numeric operands.
+        +  -  *  /  %
+        Comparison Operators :JavaScript provides comparison operators that compare two operands and return a boolean value true or false.
+        ==  === >  <  >=  <== 
+        Logical Operators :In JavaScript, the logical operators are used to combine two or more conditions. JavaScript provides the following logical operators.
+        
+        &&  || !
+
+        Assignment Operators : JavaScript provides the assignment operators to assign values to variables with less key strokes.
+        = +=  -=  *=  /=  %=
+
+        Ternary Operator :JavaScript provides a special operator called ternary operator :? that assigns a value to a variable based on some condition. This is the short form of the if else condition.
+        ?  :
+
+        increment/decrement :The ++ and -- operators are unary operators.
+         It works with either left or right operand only. When used with the left operand, 
+         e.g., x++, it will increase the value of x when the program control goes to the next statement.
+          In the same way, when it is used with the right operand, e.g., ++x, it will increase the value of x there only. Therefore,
+         x++ is called post-increment, and ++x is called pre-increment.
+
+        <b>7.What are pure functions?</b>
+        A Pure Function is a function (a block of code) that always returns the same result 
+        if the same arguments are passed. It does not depend on any state or data
+         change during a program's execution. Rather, it only depends on its input arguments.
+
+        <b>8.What is callback hell</b>
+        Callback Hell is a big issue caused by coding with complex nested callbacks. 
+        Here, each and every callback takes an argument that is a result of the previous callbacks. In this manner,
+        The code structure looks like a pyramid, making it difficult to read and maintain
+        a callback hell is defined as a nested callback functions which are complex to handle.
+        Callback hell is a phenomenon that afflicts a JavaScript developer when he tries to execute 
+        multiple asynchronous operations one after the other.
+        In this, each callback takes arguments that have been obtained as a result of previous callbacks. 
+        This kind of callback structure leads to lesser code readability and maintainability. 
+        We can avoid the callback hell with the help of Promises. Promises in javascript are a way 
+        to handle asynchronous operations in Node.  
+
+        <b>9.What is promise chaining</b>
+        Promises are used to handle asynchronous operations in JavaScript. They are easy to manage when dealing
+        with multiple asynchronous operations where callbacks can create callback hell leading to unmanageable code.
+        Sometimes, we need to execute two or more related asynchronous operations,
+        where the next operation starts with the result from the previous step. For example:
+
+        <b>10.What are arrow functions?</b>
+        Arrow functions were introduced in ES6.
+        It allows you to create functions in a cleaner way compared to regular functions
+        Arrow functions allow us to write shorter function syntax.
+        datatype functionname = () =>
+        {
+            .....stmts ;
+        }
+        
+        <b>11.Give an example of async/await</b>
+        An async function is a function declared with the async keyword, and the await keyword is permitted within it.
+        The async and await keywords enable asynchronous, promise-based 
+       behavior to be written in a cleaner style, avoiding the need to explicitly configure promise chains.
+       The body of an async function can be thought of as being split by zero or more await expressions.
+       Top-level code, up to and including the first await expression (if there is one), is run synchronously.
+       In this way, an async function without an await expression will run synchronously. 
+       If there is an await expression inside the function body, 
+       however, the async function will always complete asynchronously.
+    </pre>
+<script src="d3js.js"></script>
+</body>
+</html>
