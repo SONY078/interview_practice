@@ -49,8 +49,8 @@ for(let i=0;i<arr.length;i++)
         Ocount++;
     }
 }
-console.log(Ecount);
-console.log(Ocount);
+console.log(Ecount);  //5
+console.log(Ocount);  //5
 
 // var str = ["hello"];
 
@@ -64,9 +64,13 @@ let c1 = 0;
 
 let findVowel = string => [...string].filter(c1 => 'aeiou'.includes(c1.toLowerCase())).length;
 
-console.log("vowel count of 'hello':",findVowel('hello'));
+console.log("vowel count of 'hello':",findVowel('hello'));  //
 console.log("vowel count of 'how are you':",findVowel('how are you'));
 console.log("vowel count of 'fine':",findVowel('fine'));
+
+//op:vowel count of 'hello': 2
+// vowel count of 'how are you': 5
+// vowel count of 'fine': 2
 
 //pass by value
 function Passbyvalue(a, b) 
